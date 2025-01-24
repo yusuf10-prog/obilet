@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.obilet.runners.TestRunner" time="63.68" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.obilet.runners.TestRunner" time="93.642" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TR"/>
     <property name="sun.boot.library.path" value="/Users/yusuf/Library/Java/JavaVirtualMachines/openjdk-21.0.1/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/yusuf/Desktop/obilet/target/surefire/surefirebooter1146375293509826359.jar /Users/yusuf/Desktop/obilet/target/surefire 2025-01-24T12-48-59_523-jvmRun1 surefire9705062284944123532tmp surefire_06756180567334079461tmp"/>
+    <property name="sun.java.command" value="/Users/yusuf/Desktop/obilet/target/surefire/surefirebooter14992311610516637789.jar /Users/yusuf/Desktop/obilet/target/surefire 2025-01-24T13-19-37_587-jvmRun1 surefire8860331692954672612tmp surefire_05652485843205437213tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="TestRunner"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/yusuf/Desktop/obilet/target/surefire/surefirebooter1146375293509826359.jar"/>
+    <property name="surefire.real.class.path" value="/Users/yusuf/Desktop/obilet/target/surefire/surefirebooter14992311610516637789.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.1+12-29"/>
@@ -47,6 +47,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/q7/fgckgx0j1h99x6qd03fm0_600000gn/T/"/>
     <property name="java.version" value="21.0.1"/>
+    <property name="cucumber.filter.tags" value="@language"/>
     <property name="user.dir" value="/Users/yusuf/Desktop/obilet"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -60,32 +61,51 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="Ana sayfadaki tüm ulaşım seçeneklerinin kontrolü" classname="Obilet.com Ana Sayfa Testi" time="57.186">
+  <testcase name="Dil seçiminin İngilizce olarak değiştirilmesi" classname="Dil Seçimi Fonksiyonalitesi" time="84.507">
+    <error message="Expected condition failed: waiting for element to be clickable: By.cssSelector: button[aria-label*=&apos;language&apos;], button[title*=&apos;language&apos;], button[class*=&apos;lang&apos;] (tried for 15 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.1, moz:accessibilityChecks: false, moz:buildID: 20250113121357, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 8957, moz:profile: /var/folders/q7/fgckgx0j1h9..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}&#10;Session ID: e6d26a6a-86f5-4e03-a72c-e4b8d618c575" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.cssSelector: button[aria-label*='language'], button[title*='language'], button[class*='lang'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.1, moz:accessibilityChecks: false, moz:buildID: 20250113121357, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 8957, moz:profile: /var/folders/q7/fgckgx0j1h9..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: e6d26a6a-86f5-4e03-a72c-e4b8d618c575
+]]></error>
     <system-out><![CDATA[
-@obilet @smoke @regression
-Senaryo: Ana sayfadaki tüm ulaşım seçeneklerinin kontrolü # src/test/resources/features/ObiletHomePage.feature:6
-Starting scenario: Ana sayfadaki tüm ulaşım seçeneklerinin kontrolü
+@obilet @language @smoke @regression
+Scenario: Dil seçiminin İngilizce olarak değiştirilmesi # src/test/resources/features/LanguageSelection.feature:5
+Starting scenario: Dil seçiminin İngilizce olarak değiştirilmesi
 Bus option button elementi görüntülendi
 Flight option button elementi görüntülendi
 Ferry option button elementi görüntülendi
 Hotel option button elementi görüntülendi
-  Diyelim ki kullanıcı obilet.com anasayfasına gider      # com.obilet.stepdefinitions.HomePageSteps.userNavigatesToHomePage()
-Bus option button elementine tıklandı
-  Eğer ki kullanıcı otobüs seçeneğine tıklar              # com.obilet.stepdefinitions.HomePageSteps.userClicksBusOption()
-Flight option button elementine tıklandı
-  Ve kullanıcı uçak seçeneğine tıklar                     # com.obilet.stepdefinitions.HomePageSteps.userClicksFlightOption()
-Ferry option button elementine tıklandı
-  Ve kullanıcı feribot seçeneğine tıklar                  # com.obilet.stepdefinitions.HomePageSteps.userClicksFerryOption()
-Hotel option button elementine tıklandı
-  Ve kullanıcı otel seçeneğine tıklar                     # com.obilet.stepdefinitions.HomePageSteps.userClicksHotelOption()
-Bus option button elementine tıklandı
-Flight option button elementine tıklandı
-Ferry option button elementine tıklandı
-Hotel option button elementine tıklandı
-  O zaman tüm seçeneklerin çalıştığı doğrulanır           # com.obilet.stepdefinitions.HomePageSteps.verifyAllOptionsWork()
-Finishing scenario: Ana sayfadaki tüm ulaşım seçeneklerinin kontrolü
+  Given kullanıcı obilet.com anasayfasına gider         # com.obilet.stepdefinitions.HomePageSteps.userNavigatesToHomePage()
+Page loaded completely
+Header is visible
+Found 0 language buttons
+Error while clicking language button: Expected condition failed: waiting for element to be clickable: By.cssSelector: button[aria-label*='language'], button[title*='language'], button[class*='lang'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.1, moz:accessibilityChecks: false, moz:buildID: 20250113121357, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 8957, moz:profile: /var/folders/q7/fgckgx0j1h9..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: e6d26a6a-86f5-4e03-a72c-e4b8d618c575
+  When kullanıcı dil seçim butonuna tıklar              # com.obilet.stepdefinitions.LanguageSteps.userClicksLanguageButton()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: button[aria-label*='language'], button[title*='language'], button[class*='lang'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.1, moz:accessibilityChecks: false, moz:buildID: 20250113121357, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 8957, moz:profile: /var/folders/q7/fgckgx0j1h9..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: e6d26a6a-86f5-4e03-a72c-e4b8d618c575
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.obilet.stepdefinitions.LanguageSteps.userClicksLanguageButton(LanguageSteps.java:42)
+	at ✽.kullanıcı dil seçim butonuna tıklar(file:///Users/yusuf/Desktop/obilet/src/test/resources/features/LanguageSelection.feature:7)
+
+  And kullanıcı İngilizce seçeneğini seçer              # com.obilet.stepdefinitions.LanguageSteps.userSelectsEnglish()
+  Then dilin İngilizce olarak değiştiği doğrulanır      # com.obilet.stepdefinitions.LanguageSteps.verifyLanguageIsEnglish()
+Finishing scenario: Dil seçiminin İngilizce olarak değiştirilmesi
+Scenario failed: Dil seçiminin İngilizce olarak değiştirilmesi
 ]]></system-out>
-    <system-err><![CDATA[Oca 24, 2025 12:49:04 ÖS io.cucumber.core.options.CucumberPropertiesParser lambda$warnWhenCucumberOptionsIsUsed$1
+    <system-err><![CDATA[Oca 24, 2025 1:19:43 ÖS io.cucumber.core.options.CucumberPropertiesParser lambda$warnWhenCucumberOptionsIsUsed$1
 WARNING: Passing commandline options via the property 'cucumber.options' is no longer supported. Please use individual properties instead. See the java doc on io.cucumber.core.options.Constants for details.
 SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation

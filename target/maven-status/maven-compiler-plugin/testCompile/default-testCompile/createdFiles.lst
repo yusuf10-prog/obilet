@@ -1,6 +1,7 @@
-com/obilet/utils/ConfigReader.class
 com/obilet/pages/HomePage.class
+com/obilet/stepdefinitions/LanguageSteps.class
 com/obilet/hooks/Hooks.class
+com/obilet/utils/ConfigReader.class
 com/obilet/utils/WebDriverManager.class
 com/obilet/pages/BasePage.class
 com/obilet/runners/TestRunner.class
