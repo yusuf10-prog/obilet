@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="57.541" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Obilet.com Ana Sayfa Testi" name="Ana sayfadaki tüm ulaşım seçeneklerinin kontrolü" time="56.477">
+<system-out><![CDATA[
+Diyelim ki kullanıcı obilet.com anasayfasına gider..........................passed
+Eğer ki kullanıcı otobüs seçeneğine tıklar..................................passed
+Ve kullanıcı uçak seçeneğine tıklar.........................................passed
+Ve kullanıcı feribot seçeneğine tıklar......................................passed
+Ve kullanıcı otel seçeneğine tıklar.........................................passed
+O zaman tüm seçeneklerin çalıştığı doğrulanır...............................passed
+]]></system-out>
+</testcase>
+</testsuite>

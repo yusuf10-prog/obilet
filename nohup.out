@@ -1,0 +1,93 @@
+INFO    | Android emulator version 32.1.15.0 (build_id 10696886) (CL:N/A)
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-34/google_apis/x86_64/
+ERROR   | main: Failed to raise files limit. errno 22
+WARNING | Please update the emulator to one that supports the feature(s): SupportPixelFold
+WARNING | Running on a system with less than 6 logical cores. Setting number of virtual cores to 1
+WARNING | cannot add library /Users/yusuf/Library/Android/sdk/emulator/qemu/darwin-x86_64/lib64/vulkan/libvulkan.dylib: failed
+INFO    | Storing crashdata in: /tmp/android-yusuf/emu-crash.db, detection is enabled
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+INFO    | Crash reports will be automatically uploaded to: https://clients2.google.com/cr/report
+INFO    | added library /Users/yusuf/Library/Android/sdk/emulator/lib64/vulkan/libvulkan.dylib
+INFO    | Sending adb public key [QAAAAGFaEnZfNiCEvbcMW4rY/p7bLwRWCnYtF4bO2O1SM+cmFckWQFRFLElb6V7vSEU5wY3D7S1s0ZCyV9uWhgOOxcOQdIB6qNL6WLz+vrDXha7LDj0qsfSIZaBGAxNh27oA5/0LWNzeGafOSe0KRpIHuvXT3HVhQLB3sljuefOq0uRYri/pTpMuPsfvvU3q0wRMiJ8SLFB7Um/kGyrZqz6OM3Hcy3Kl7X+JznGnWE+N4LbCBMnbOVtfDG/xiIfkaCFyNGY7U9wb+ptmPxQI5UfiilHWEu00WX0jwUvf9erwwoDW2qC7Z/3ju6HBW3MF/PO22NOB+SV6xrcl+2Oq+IeJMITbb2HIHf0TN/9G4oKlF+EQh6aYtqFoeYqLyvgB5JQWSHedKv9EL0gWUv6XW1QyBQDGqiLMnpwSuFqODWgEsc/1Zuog63Xiij4q5qQcZ3QtaJQkwQObetuuErouMvFkXS3+Atb+0ryw0lMzTmQ7lmYnytIRZScJP3q34BXqtH0nPZwUR4KtkPN3cZkpX0wg2D5Tbe4YqD1nWQ3lCuq7WJ9Y75YAJPjCPCtatWw1JXIgCUTjYfB+UUz7ysylJP+akPs2+B0HDktLHYjP7TiNgPpvHWle0tdirP8kudpAZ3zp3Nk2ChMM1OpQDKoyNuK+vzXQ8+W2MOVndigcUCayQk1y8M4fdwEAAQA= yusuf@unknown]
+WARNING | *** No gRPC protection active, consider launching with the -grpc-use-jwt flag.***
+INFO    | Started GRPC server at 127.0.0.1:8554, security: Local, auth: none
+INFO    | Advertising in: /Users/yusuf/Library/Caches/TemporaryItems/avd/running/pid_24171.ini
+INFO    | Setting display: 0 configuration to: 1080x2400, dpi: 420x420 
+INFO    | Boot completed in 107018 ms
+INFO    | Increasing screen off timeout, logcat buffer size to 2M.
+INFO    | Revoking microphone permissions for Google App.
+INFO    | Wait for emulator (pid 24171) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+INFO    | Wait for emulator (pid 24171) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+INFO    | Critical: Uncaught SyntaxError: Unexpected token . (qrc:/html/js/location-mock-web-channel.js:30, (null))
+INFO    | Critical: Uncaught TypeError: Cannot read property 'update' of undefined (qrc:/html/js/location-mock-web-channel.js:130, (null))
+INFO    | Critical: Uncaught SyntaxError: Unexpected token . (qrc:/html/js/location-mock-web-channel.js:30, (null))
+INFO    | Android emulator version 32.1.15.0 (build_id 10696886) (CL:N/A)
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-30/google_apis_playstore/x86/
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-30/google_apis_playstore/x86/
+ERROR   | main: Failed to raise files limit. errno 22
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+WARNING | Running on a system with less than 6 logical cores. Setting number of virtual cores to 1
+WARNING | cannot add library /Users/yusuf/Library/Android/sdk/emulator/qemu/darwin-x86_64/lib64/vulkan/libvulkan.dylib: failed
+INFO    | Storing crashdata in: /tmp/android-yusuf/emu-crash.db, detection is enabled
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+INFO    | Crash reports will be automatically uploaded to: https://clients2.google.com/cr/report
+INFO    | added library /Users/yusuf/Library/Android/sdk/emulator/lib64/vulkan/libvulkan.dylib
+WARNING | *** No gRPC protection active, consider launching with the -grpc-use-jwt flag.***
+INFO    | Started GRPC server at 127.0.0.1:8554, security: Local, auth: none
+INFO    | Advertising in: /Users/yusuf/Library/Caches/TemporaryItems/avd/running/pid_24345.ini
+INFO    | Setting display: 0 configuration to: 1080x1920, dpi: 420x420 
+INFO    | Boot completed in 102188 ms
+INFO    | Increasing screen off timeout, logcat buffer size to 2M.
+INFO    | Revoking microphone permissions for Google App.
+INFO    | Critical: Uncaught SyntaxError: Unexpected token . (qrc:/html/js/location-mock-web-channel.js:30, (null))
+INFO    | Critical: Uncaught SyntaxError: Unexpected token . (qrc:/html/js/location-mock-web-channel.js:30, (null))
+
+INFO    | Critical: Uncaught TypeError: Cannot read property 'update' of undefined (qrc:/html/js/location-mock-web-channel.js:130, (null))
+INFO    | Warning: Failed to get QCocoaScreen for NSObject(0x0) ((null):0, (null))
+INFO    | Wait for emulator (pid 24345) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+INFO    | Android emulator version 32.1.15.0 (build_id 10696886) (CL:N/A)
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-30/google_apis_playstore/x86/
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-30/google_apis_playstore/x86/
+ERROR   | main: Failed to raise files limit. errno 22
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+ERROR   | Running multiple emulators with the same AVD 
+ERROR   | is an experimental feature.
+ERROR   | Please use -read-only flag to enable this feature.
+INFO    | Storing crashdata in: /tmp/android-yusuf/emu-crash.db, detection is enabled
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+INFO    | Android emulator version 32.1.15.0 (build_id 10696886) (CL:N/A)
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-30/google_apis_playstore/x86/
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-30/google_apis_playstore/x86/
+ERROR   | main: Failed to raise files limit. errno 22
+WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+WARNING | Running on a system with less than 6 logical cores. Setting number of virtual cores to 1
+WARNING | cannot add library /Users/yusuf/Library/Android/sdk/emulator/qemu/darwin-x86_64/lib64/vulkan/libvulkan.dylib: failed
+INFO    | Storing crashdata in: /tmp/android-yusuf/emu-crash.db, detection is enabled
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+INFO    | Crash reports will be automatically uploaded to: https://clients2.google.com/cr/report
+INFO    | added library /Users/yusuf/Library/Android/sdk/emulator/lib64/vulkan/libvulkan.dylib
+WARNING | *** No gRPC protection active, consider launching with the -grpc-use-jwt flag.***
+INFO    | Started GRPC server at 127.0.0.1:8554, security: Local, auth: none
+INFO    | Advertising in: /Users/yusuf/Library/Caches/TemporaryItems/avd/running/pid_24915.ini
+INFO    | Setting display: 0 configuration to: 1080x2220, dpi: 440x440 
+INFO    | Critical: Uncaught SyntaxError: Unexpected token . (qrc:/html/js/location-mock-web-channel.js:30, (null))
+INFO    | Critical: Uncaught SyntaxError: Unexpected token . (qrc:/html/js/location-mock-web-channel.js:30, (null))
+
+INFO    | Critical: Uncaught TypeError: Cannot read property 'update' of undefined (qrc:/html/js/location-mock-web-channel.js:130, (null))
+INFO    | Warning: Failed to get QCocoaScreen for NSObject(0x0) ((null):0, (null))
+INFO    | Android emulator version 32.1.15.0 (build_id 10696886) (CL:N/A)
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-29/google_apis_playstore/x86/
+INFO    | Found systemPath /Users/yusuf/Library/Android/sdk/system-images/android-29/google_apis_playstore/x86/
+ERROR   | main: Failed to raise files limit. errno 22
+WARNING | Running on a system with less than 6 logical cores. Setting number of virtual cores to 1
+WARNING | Your AVD has been configured with an in-guest renderer, but the system image does not support guest rendering.Falling back to 'swiftshader_indirect' mode.
+WARNING | cannot add library /Users/yusuf/Library/Android/sdk/emulator/qemu/darwin-x86_64/lib64/vulkan/libvulkan.dylib: failed
+INFO    | Crashreporting disabled, not reporting crashes.
+INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+INFO    | added library /Users/yusuf/Library/Android/sdk/emulator/lib64/vulkan/libvulkan.dylib
+WARNING | *** No gRPC protection active, consider launching with the -grpc-use-jwt flag.***
+INFO    | Started GRPC server at 127.0.0.1:8554, security: Local, auth: none
+INFO    | Advertising in: /Users/yusuf/Library/Caches/TemporaryItems/avd/running/pid_25020.ini
+INFO    | Setting display: 0 configuration to: 1080x2280, dpi: 440x440 
+INFO    | Wait for emulator (pid 25020) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
