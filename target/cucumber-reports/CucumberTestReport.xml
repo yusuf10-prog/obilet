@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="154.642" tests="2" skipped="0" failures="1" errors="0">
-<testcase classname="Dil Seçimi Fonksiyonalitesi" name="Dil seçiminin İngilizce olarak değiştirilmesi" time="95.42">
+<testsuite name="Cucumber" time="149.433" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Dil Seçimi Fonksiyonalitesi" name="Dil seçiminin İngilizce olarak değiştirilmesi" time="93.273">
 <failure type="java.lang.RuntimeException" message="Could not find Turkish flag button with any selector">
 <![CDATA[java.lang.RuntimeException: Could not find Turkish flag button with any selector
-	at com.obilet.stepdefinitions.LanguageSteps.userClicksLanguageButton(LanguageSteps.java:59)
+	at com.obilet.stepdefinitions.LanguageSteps.userClicksLanguageButton(LanguageSteps.java:62)
 	at ✽.kullanıcı dil seçim butonuna tıklar(file:///Users/yusuf/Desktop/obilet/src/test/resources/features/LanguageSelection.feature:7)
 ]]>
 </failure>
@@ -14,7 +14,7 @@ And kullanıcı İngilizce seçeneğini seçer..................................
 Then dilin İngilizce olarak değiştiği doğrulanır............................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Obilet.com Ana Sayfa Testi" name="Ana sayfadaki tüm ulaşım seçeneklerinin kontrolü" time="57.707">
+<testcase classname="Obilet.com Ana Sayfa Testi" name="Ana sayfadaki tüm ulaşım seçeneklerinin kontrolü" time="54.636">
 <system-out><![CDATA[
 Diyelim ki kullanıcı obilet.com anasayfasına gider..........................passed
 Eğer ki kullanıcı otobüs seçeneğine tıklar..................................passed

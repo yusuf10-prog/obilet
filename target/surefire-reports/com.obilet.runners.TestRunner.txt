@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.obilet.runners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 163.768 s <<< FAILURE! - in com.obilet.runners.TestRunner
-Dil Seçimi Fonksiyonalitesi.Dil seçiminin İngilizce olarak değiştirilmesi  Time elapsed: 96.097 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 156.382 s <<< FAILURE! - in com.obilet.runners.TestRunner
+Dil Seçimi Fonksiyonalitesi.Dil seçiminin İngilizce olarak değiştirilmesi  Time elapsed: 93.755 s  <<< ERROR!
 java.lang.RuntimeException: Could not find Turkish flag button with any selector
 
