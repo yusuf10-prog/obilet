@@ -34,21 +34,10 @@ public class LanguageSteps extends BasePage {
             FileUtils.copyFile(screenshot, new File("target/screenshots/homepage.png"));
             System.out.println("Screenshot saved as homepage.png");
             
-            // Sayfa kaynağını yazdır
-            String pageSource = driver.getPageSource();
-            System.out.println("Page source:");
-            System.out.println(pageSource);
+            // Türk bayrağı butonunu bul
+            List<WebElement> languageButtons = driver.findElements(
+                By.cssSelector("[class*='language-select'], [class*='lang-select'], img[alt*='Türk'], img[src*='turkish'], [class*='turkish-flag']"));
             
-            // Tüm butonları bul ve yazdır
-            List<WebElement> allButtons = driver.findElements(By.tagName("button"));
-            System.out.println("Found " + allButtons.size() + " buttons on the page");
-            for (WebElement button : allButtons) {
-                System.out.println("Button text: " + button.getText());
-                System.out.println("Button class: " + button.getAttribute("class"));
-            }
-            
-            // Dil seçim butonunu farklı lokatorlarla bulmayı dene
-            List<WebElement> languageButtons = driver.findElements(By.cssSelector("[class*='language'], [class*='lang'], [aria-label*='language']"));
             System.out.println("Found " + languageButtons.size() + " potential language buttons");
             
             if (!languageButtons.isEmpty()) {
@@ -57,7 +46,18 @@ public class LanguageSteps extends BasePage {
                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", languageButton);
                 System.out.println("Clicked language button: " + languageButton.getAttribute("outerHTML"));
             } else {
-                throw new RuntimeException("Could not find language button with any selector");
+                // Alternatif olarak data-language attribute'unu dene
+                List<WebElement> altButtons = driver.findElements(
+                    By.cssSelector("[data-language='tr'], [data-lang='tr'], button:has(img[alt*='Türk'])"));
+                
+                if (!altButtons.isEmpty()) {
+                    WebElement altButton = altButtons.get(0);
+                    wait.until(ExpectedConditions.elementToBeClickable(altButton));
+                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", altButton);
+                    System.out.println("Clicked alternative language button: " + altButton.getAttribute("outerHTML"));
+                } else {
+                    throw new RuntimeException("Could not find Turkish flag button with any selector");
+                }
             }
         } catch (Exception e) {
             System.out.println("Error while clicking language button: " + e.getMessage());
