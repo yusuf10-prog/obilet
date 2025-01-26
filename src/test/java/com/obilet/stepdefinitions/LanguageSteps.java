@@ -36,7 +36,9 @@ public class LanguageSteps extends BasePage {
             
             // Türk bayrağı butonunu bul
             List<WebElement> languageButtons = driver.findElements(
-                By.cssSelector("[class*='language-select'], [class*='lang-select'], img[alt*='Türk'], img[src*='turkish'], [class*='turkish-flag']"));
+                By.xpath("//button[contains(@class, 'language-select') or contains(@class, 'lang-select')] | " +
+                        "//img[contains(@alt, 'Türk') or contains(@src, 'turkish')] | " +
+                        "//*[contains(@class, 'turkish-flag')]"));
             
             System.out.println("Found " + languageButtons.size() + " potential language buttons");
             
@@ -48,7 +50,8 @@ public class LanguageSteps extends BasePage {
             } else {
                 // Alternatif olarak data-language attribute'unu dene
                 List<WebElement> altButtons = driver.findElements(
-                    By.cssSelector("[data-language='tr'], [data-lang='tr'], button:has(img[alt*='Türk'])"));
+                    By.xpath("//*[@data-language='tr' or @data-lang='tr'] | " +
+                            "//button[.//img[contains(@alt, 'Türk')]]"));
                 
                 if (!altButtons.isEmpty()) {
                     WebElement altButton = altButtons.get(0);
@@ -70,12 +73,15 @@ public class LanguageSteps extends BasePage {
     public void userSelectsEnglish() {
         try {
             // Dil seçeneklerinin görünür olmasını bekle
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class*='language-select'], [class*='lang-select']")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//*[contains(@class, 'language-select') or contains(@class, 'lang-select')]")));
             System.out.println("Language select dropdown is visible");
             
             // İngilizce seçeneğini bul
             List<WebElement> englishOptions = driver.findElements(
-                By.cssSelector("[data-language='en'], [class*='english'], [class*='lang-en']"));
+                By.xpath("//*[@data-language='en'] | " +
+                        "//*[contains(@class, 'english')] | " +
+                        "//*[contains(@class, 'lang-en')]"));
             System.out.println("Found " + englishOptions.size() + " potential English options");
             
             if (!englishOptions.isEmpty()) {
@@ -98,7 +104,8 @@ public class LanguageSteps extends BasePage {
         try {
             // Dil butonunun güncellenmiş halini bekle
             List<WebElement> languageButtons = driver.findElements(
-                By.cssSelector("[class*='language'], [class*='lang'], [aria-label*='language']"));
+                By.xpath("//*[contains(@class, 'language') or contains(@class, 'lang')] | " +
+                        "//*[contains(@aria-label, 'language')]"));
             
             if (!languageButtons.isEmpty()) {
                 WebElement languageButton = languageButtons.get(0);
