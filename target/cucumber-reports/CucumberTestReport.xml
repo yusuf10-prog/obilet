@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="85.795" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Dil Seçimi Fonksiyonalitesi" name="Dil seçiminin İngilizce olarak değiştirilmesi" time="83.934">
-<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for element to be clickable: By.cssSelector: button[aria-label*='language'], button[title*='language'], button[class*='lang'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '21.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.1, moz:accessibilityChecks: false, moz:buildID: 20250113121357, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 8957, moz:profile: /var/folders/q7/fgckgx0j1h9..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: e6d26a6a-86f5-4e03-a72c-e4b8d618c575">
-<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: button[aria-label*='language'], button[title*='language'], button[class*='lang'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '21.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 134.0.1, moz:accessibilityChecks: false, moz:buildID: 20250113121357, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 19.6.0, moz:processID: 8957, moz:profile: /var/folders/q7/fgckgx0j1h9..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: e6d26a6a-86f5-4e03-a72c-e4b8d618c575
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.obilet.stepdefinitions.LanguageSteps.userClicksLanguageButton(LanguageSteps.java:42)
+<testsuite name="Cucumber" time="154.642" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Dil Seçimi Fonksiyonalitesi" name="Dil seçiminin İngilizce olarak değiştirilmesi" time="95.42">
+<failure type="java.lang.RuntimeException" message="Could not find Turkish flag button with any selector">
+<![CDATA[java.lang.RuntimeException: Could not find Turkish flag button with any selector
+	at com.obilet.stepdefinitions.LanguageSteps.userClicksLanguageButton(LanguageSteps.java:59)
 	at ✽.kullanıcı dil seçim butonuna tıklar(file:///Users/yusuf/Desktop/obilet/src/test/resources/features/LanguageSelection.feature:7)
 ]]>
 </failure>
@@ -24,6 +12,16 @@ Given kullanıcı obilet.com anasayfasına gider...............................p
 When kullanıcı dil seçim butonuna tıklar....................................failed
 And kullanıcı İngilizce seçeneğini seçer....................................skipped
 Then dilin İngilizce olarak değiştiği doğrulanır............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Obilet.com Ana Sayfa Testi" name="Ana sayfadaki tüm ulaşım seçeneklerinin kontrolü" time="57.707">
+<system-out><![CDATA[
+Diyelim ki kullanıcı obilet.com anasayfasına gider..........................passed
+Eğer ki kullanıcı otobüs seçeneğine tıklar..................................passed
+Ve kullanıcı uçak seçeneğine tıklar.........................................passed
+Ve kullanıcı feribot seçeneğine tıklar......................................passed
+Ve kullanıcı otel seçeneğine tıklar.........................................passed
+O zaman tüm seçeneklerin çalıştığı doğrulanır...............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
