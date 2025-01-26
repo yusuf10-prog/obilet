@@ -13,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import java.io.File;
 import org.apache.commons.io.FileUtils;
 import java.util.List;
+import java.io.IOException;
 import static org.junit.Assert.assertTrue;
 
 public class LanguageSteps extends BasePage {
@@ -22,7 +23,7 @@ public class LanguageSteps extends BasePage {
     }
 
     @When("kullanıcı dil seçim butonuna tıklar")
-    public void userClicksLanguageButton() {
+    public void userClicksLanguageButton() throws IOException {
         // Sayfanın tam olarak yüklenmesini bekle
         wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
         System.out.println("Page loaded completely");
