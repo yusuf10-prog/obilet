@@ -15,6 +15,7 @@ import org.junit.runner.RunWith;
                 "junit:target/cucumber-reports/CucumberTestReport.xml",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
         },
+
         monochrome = true,
         dryRun = false,
         tags = "@obilet"
