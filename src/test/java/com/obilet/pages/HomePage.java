@@ -41,6 +41,7 @@ public class HomePage extends BasePage {
                isElementDisplayed(flightOption, "Flight option button") &&
                isElementDisplayed(ferryOption, "Ferry option button") &&
                isElementDisplayed(hotelOption, "Hotel option button");
+
     }
 
     public void clickBusOption() {
