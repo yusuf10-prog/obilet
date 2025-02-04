@@ -16,6 +16,7 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
+
     }
 
     protected void waitAndClick(WebElement element, String elementName) {
